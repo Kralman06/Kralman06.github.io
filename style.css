@@ -1,0 +1,108 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #fff;
+    color: #000;
+}
+header {
+    background: #000;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+.hero {
+    height: 80vh;
+    background: url('https://images.unsplash.com/photo-1520975916090-3105956da599?fit=crop&w=1950&q=80') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.hero h2 {
+    font-size: 3em;
+    margin: 0;
+}
+.btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: white;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #f1f1f1;
+}
+
+.products {
+    padding: 20px;
+}
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.product {
+    flex: 1 1 30%;
+    border: 1px solid #ccc;
+    padding: 15px;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+.product button {
+    background: black;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .product-list {
+        flex-direction: column;
+    }
+    .product {
+        flex: 1 1 100%;
+    }
+    .hero h2 {
+        font-size: 2em;
+        padding: 10px;
+        text-align: center;
+    }
+    .btn {
+        padding: 8px 16px;
+    }
+}
+
+.contact {
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+}
+form input, form textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+form button {
+    background: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
